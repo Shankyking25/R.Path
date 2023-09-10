@@ -334,9 +334,9 @@ const homeButton =()=>{
 						
 						 </Box>
 				
-				
+{/*
 					{props.auth ?
-						
+*/}						
 							<Box className="nav" style={{ display:"flex",width:"30%",}}  ref={navRef} >
 						
 						            <Box style={{ width: "50%",  }}  >
@@ -354,13 +354,13 @@ const homeButton =()=>{
 							   
 						</Box>	
 						
-						:
+{/*						:
 
 						<Box>
                            <Button   style={{width:"100px",backgroundColor:"blue", color:"white"}}   onClick={handleLogout}>Logout</Button>
 						</Box>
 			 }
-			
+*/}			
 					</Box>
 										 
 							
