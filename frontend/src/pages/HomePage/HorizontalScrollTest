@@ -1,0 +1,25 @@
+import React, { useRef } from 'react';
+import './HorizontalScroll.css';
+import { Card, CardContent } from '@material-ui/core';
+
+const HorizontalScrollTest = ({ children }) => {
+  const scrollContainerRef = useRef(null);
+
+  const handleScroll = () => {
+    const scrollContainer = scrollContainerRef.current;
+    const scrollAmount = scrollContainer.scrollLeft / (scrollContainer.scrollWidth - scrollContainer.clientWidth);
+    scrollContainer.style.setProperty('--scroll-amount', scrollAmount);
+  };
+
+  return (
+    <div
+      ref={scrollContainerRef}
+      className="horizontal-scroll"
+      onScroll={handleScroll}
+    >
+      {children}
+    </div>
+  );
+};
+
+export default HorizontalScrollTest;
