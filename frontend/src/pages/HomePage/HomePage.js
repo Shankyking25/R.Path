@@ -192,10 +192,9 @@ const [unitName, setUnitName] = useState();
 <>
 
 
-
 			
 <div    style={{width:"100%", height:"100px" , textAlign:"center", 
-backgroundColor:"gray"
+backgroundColor:"gray", 
 }}>
 	<section className='hero'>
 					{home.map((val, i) => (
@@ -266,23 +265,15 @@ backgroundColor:"gray"
 
 
 
-
-
-
-
-
-
-
-
-
-			
-
+<Grid lg={12} sm={12} md={12} xs={12}  style={{overflowX:"hidden"}}>
 
 
 			{/* Slidr  */}
 
 
-<Grid >
+	 
+
+<Grid lg={12} sm={12} md={12} xs={12}>
       <Slider {...settings}>
 					{dataDigitalBestSeller.map((item) => (
           <div className="card">
@@ -352,7 +343,7 @@ backgroundColor:"gray"
                                             <h2 style={{color:"red"}}>Aptitude Prepration</h2>
 											
 											<div style={{paddingTop:"10px"}}>
-											<p style={{color:"gray"}} > This section tests your numerical ability and mathematical skills. It often includes topics such as number systems, simplification, percentage, ratio and proportion, averages, time and work, time and distance, profit and loss, etc. </p>
+											<p style={{color:"gray"}} > This section tests your numerical ability and mathematical skills. It often includes topics such as number systems, simplification, percentage, algebra, geometry, ratio and proportion, averages, time and work, time and distance, profit and loss, etc. </p>
 											</div>
 											
 
@@ -454,211 +445,6 @@ backgroundColor:"gray"
               </CardContent>
 
 
-
-					
-{/*
-
-					
-			  <CardContent   >
-					
-					<div className="card-flyer  " style={{ border: "2px solid black", padding:"10px" }}>
-										  <div className="text-box img1">
-											  <div className="image-box ">
-												 
-												  <img src={img4} alt="" />
-	  
-											  </div>
-											  <div style={{textAlign:"center"}}>
-												  <h2 style={{color:"red"}}>Current Affairs Prepration</h2>
-												  
-												  <div style={{paddingTop:"10px"}}>
-												  <p style={{color:"gray"}} > Stay updated with current affairs by reading newspapers, watching news channels, and following reliable online sources. Focus on national and international news, government schemes, sports events, awards, and prominent personalities.</p>
-												  </div>
-												  
-	  
-											  </div>
-											  
-										  
-								  </div>
-								  
-	  
-	  
-								  <div style={{ textAlign: "center" ,marginTop:"10px", marginBottom:"10px"}}>
-									  <Link  to='/card1Gov'>
-										  <Button style={{ border:"2px solid black" }}> View More </Button></Link>
-								  </div>
-	  
-							  </div>
-							  
-	  
-					</CardContent>
-
-					
-
-
-
-
-					<CardContent   >
-					
-					<div className="card-flyer  " style={{ border: "2px solid black", padding:"10px" }}>
-										  <div className="text-box img1">
-											  <div className="image-box ">
-												 
-												  <img src={img5} alt="" />
-	  
-											  </div>
-											  <div style={{textAlign:"center"}}>
-												  <h2 style={{color:"red"}}>General Awareness</h2>
-												  
-												  <div style={{paddingTop:"10px"}}>
-										<p style={{ color: "gray" }} > This section tests your knowledge of current affairs, general knowledge, and static GK. It is crucial to stay updated with national and international news, politics, sports, awards, important dates, history, geography, science, and more.
-										</p>
-												  </div>
-												  
-	  
-											  </div>
-											  
-										  
-								  </div>
-								  
-	  
-	  
-								  <div style={{ textAlign: "center" ,marginTop:"10px", marginBottom:"10px"}}>
-									  <Link  to='/card1Gov'>
-										  <Button style={{ border:"2px solid black" }}> View More </Button></Link>
-								  </div>
-	  
-							  </div>
-							  
-	  
-					</CardContent>
-
-
-
-					
-
-
-					
-					<CardContent   >
-					
-					<div className="card-flyer  " style={{ border: "2px solid black", padding:"10px" }}>
-										  <div className="text-box img1">
-											  <div className="image-box ">
-												 
-												  <img src={img6} alt="" />
-	  
-											  </div>
-											  <div style={{textAlign:"center"}}>
-												  <h2 style={{color:"red"}}>Data Interpretation Prepration</h2>
-												  
-												  <div style={{paddingTop:"10px"}}>
-												  <p style={{color:"gray"}} > This area assesses your ability to interpret and analyze data presented in the form of tables, graphs, and charts. Practice calculations, data analysis, data comparison, data sufficiency, and drawing conclusions based on the given information. </p>
-												  </div>
-												  
-	  
-											  </div>
-											  
-										  
-								  </div>
-								  
-	  
-	  
-								  <div style={{ textAlign: "center" ,marginTop:"10px", marginBottom:"10px"}}>
-									  <Link  to='/card1Gov'>
-										  <Button style={{ border:"2px solid black" }}> View More </Button></Link>
-								  </div>
-	  
-							  </div>
-							  
-	  
-					</CardContent>
-
-			
-
-
-
-
-
-
-
-
-					<CardContent   >
-					
-					<div className="card-flyer  " style={{ border: "2px solid black", padding:"10px" }}>
-										  <div className="text-box img1">
-											  <div className="image-box ">
-												 
-												  <img src={img1} alt="" />
-	  
-											  </div>
-											  <div style={{textAlign:"center"}}>
-												  <h2 style={{color:"red"}}>General Science Prepration</h2>
-												  
-												  <div style={{paddingTop:"10px"}}>
-										<p style={{ color: "gray" }} > This subject tests your knowledge of basic science concepts from subjects like physics, chemistry, and biology. Cover topics like laws of motion, chemical reactions, human body systems, periodic table, etc  and some more topics.
-										</p>
-												  </div>
-												  
-	  
-											  </div>
-											  
-										  
-								  </div>
-								  
-	  
-	  
-								  <div style={{ textAlign: "center" ,marginTop:"10px", marginBottom:"10px"}}>
-									  <Link  to='/card1Gov'>
-										  <Button style={{ border:"2px solid black" }}> View More </Button></Link>
-								  </div>
-	  
-							  </div>
-							  
-	  
-					</CardContent>
-
-					
-
-
-
-
-
-
-					<CardContent   >
-					
-					<div className="card-flyer  " style={{ border: "2px solid black", padding:"10px" }}>
-										  <div className="text-box img1">
-											  <div className="image-box ">
-												 
-												  <img src={img1} alt="" />
-	  
-											  </div>
-											  <div style={{textAlign:"center"}}>
-												  <h2 style={{color:"red"}}>Social Science Prepration</h2>
-												  
-												  <div style={{paddingTop:"10px"}}>
-												  <p style={{color:"gray"}} > For exams that include a social science section, study topics like history, geography, economics, and civics. Focus on important events, dates, geographical features, Indian economy, government policies, etc and some more topics. </p>
-												  </div>
-												  
-	  
-											  </div>
-											  
-										  
-								  </div>
-								  
-	  
-	  
-								  <div style={{ textAlign: "center" ,marginTop:"10px", marginBottom:"10px"}}>
-									  <Link  to='/card1Gov'>
-										  <Button style={{ border:"2px solid black" }}> View More </Button></Link>
-								  </div>
-	  
-							  </div>
-		
-					</CardContent>
-*/}
-
-
 	   </Slider>
 	</Grid>			
 
@@ -691,7 +477,7 @@ backgroundColor:"gray"
 					
 	  <CardContent   >
 					
-					<div className="card-flyer  " style={{ border: "2px solid black", padding:"10px" }}>
+					<div className="card-flyer  " style={{ border: "2px solid black", padding:"10px",}}>
 										  <div className="text-box img1">
 											  <div className="image-box ">
 												 
@@ -699,10 +485,10 @@ backgroundColor:"gray"
 	  
 											  </div>
 											  <div style={{textAlign:"center"}}>
-												  <h2 style={{color:"red"}}>Quantitative Aptitude Prepration</h2>
+												  <h2 style={{color:"red"}}> Aptitude Prepration </h2>
 												  
 												  <div style={{paddingTop:"10px"}}>
-												  <p style={{color:"gray"}} > This section tests your numerical ability and mathematical skills. It often includes topics such as arithmetic, algebra, geometry, number systems, percentage, ratio and proportion, averages, time and work, time and distance, profit and loss, etc.</p>
+												  <p style={{color:"gray"}} > This section tests your numerical ability and mathematical skills. It often includes topics such as number systems, simplification, percentage, algebra, geometry, ratio and proportion, averages, time and work, time and distance, profit and loss, etc.</p>
 												  </div>
 												  
 	  
@@ -741,7 +527,7 @@ backgroundColor:"gray"
 												  <h2 style={{color:"red"}}>Reasoning Ability Prepration</h2>
 												  
 												  <div style={{paddingTop:"10px"}}>
-												  <p style={{color:"gray"}} > This section evaluates your logical and analytical reasoning skills. It typically covers topics like coding-decoding, blood relations, seating arrangement, syllogism, puzzles, data sufficiency, analogies, number series, statement and argument, etc. </p>
+												  <p style={{color:"gray"}} > This section evaluates your logical and analytical reasoning skills. It typically covers topics like coding-decoding, blood relations, seating arrangement, syllogism, analogies, number series, statement and argument, visual reasoning, etc.  </p>
 												  </div>
 												  
 	  
@@ -1463,18 +1249,6 @@ backgroundColor:"gray"
 
 
 
-{/*
-
-<Grid container item md={12} sm={12} xs={12} lg={12} mx="auto"    style={{paddingTop:"50px"}}  >
-				<Grid   item md={6} sm={12} xs={12} lg={12} mx="auto"         style={{  textAlign:"center" }}   >
-					<h1 className="fs-5 text-center mb-0   text"   style={{color:"black"  }}>Job Portal </h1>
-			        <hr className='w-25 mx-auto' />
-				</Grid>
-				
-                
-		    </Grid>       
-*/}
-
 
 <br/>
 
@@ -1568,69 +1342,7 @@ backgroundColor:"gray"
 				</Grid>
 
 
-				{/*
 				
-				<Grid  container item md={6} sm={12} xs={12} lg={12} mx="auto"     style={{   border:"2px solid black", textAlign:"center" }}>
-
-                    
-					        <Grid   container item md={12} sm={12} xs={12} lg={12} mx="auto"     style={{   border:"2px solid black", textAlign:"center" }}>
-						       <Grid   item md={6} sm={12} xs={12} lg={12} mx="auto"     style={{   border:"2px solid black", textAlign:"center" }}  >
-                                        <label for="name" className="form-label  text"> Your Name : </label>
-                                </Grid>     
-							
-								<Grid   item md={6} sm={12} xs={12} lg={12} mx="auto"     style={{   border:"2px solid black", textAlign:"center" }}  >
-							       <input type="text" className="form-control" id="name" placeholder="Rohit Singh"
-
-
-                                            name='name'
-                                       //     value={msg.name}
-                                      //      onChange={handleChange}
-
-						            	/>
-							    </Grid>
-                            </Grid>
-
-					        <Grid  container item md={12} sm={12} xs={12} lg={12} mx="auto"   >
-						            <Grid   item md={6} sm={12} xs={12} lg={12} mx="auto"   >
-                                        <label for="exampleFormControlInput1" className="form-label  text">Email address : </label>
-									</Grid> 
-							
-									<Grid   item md={6} sm={12} xs={12} lg={12} mx="auto"   >
-							            <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"
-
-
-                                            name='email'
-                                      //      value={msg.email}
-                                      //      onChange={handleChange}
-
-
-							            />
-							        </Grid>
-                                </Grid>
-
-					            <Grid container item md={12} sm={12} xs={12} lg={12} mx="auto"  >
-							      	<Grid   item md={6} sm={12} xs={12} lg={12} mx="auto"   >
-                                        <label for="exampleFormControlInput1" className="form-label   text">Your Message</label>
-                                    </Grid>  
-									<Grid   item md={6} sm={12} xs={12} lg={12} mx="auto"   >
-						               <textarea  style={{border:"2px solid black", width:"90%" , height:"130px"}}
-
-
-                                            name='message'
-                                         //   value={msg.message}
-                                          //  onChange={handleChange}
-
-
-                                        ></textarea>
-                                    </Grid>
-								</Grid>
-
-                                    <button type='submit' className='btn btn-outline-primary rounded-pill px-4    text'>Send Message <i className="fa fa-paper-plane ms-2 "></i></button>
-
-
-				</Grid>
-			*/}
-       
 			</Grid>
 
 			</Container>
@@ -1643,7 +1355,7 @@ backgroundColor:"gray"
 		
 
 		<Grid   style={{marginTop:"50px"}}   >
-				<Box  p={4} style={{ fontSize:"20px",textAlign:"center",height:"auto", backgroundColor:"gray" }}>
+				<Box  p={4} style={{ fontSize:"20px",textAlign:"center",height:"auto", backgroundColor:"#29335c" }}>
 
                 <p> All Right Resceved 2022</p>
 
@@ -1670,17 +1382,7 @@ backgroundColor:"gray"
 				 <h2>R. Path</h2>
 				 <hr/>
 				</div>
-			   {/* <div>
-				<h5>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.
-				</h5>
-				</div>
-		*/}
-{/*
-				<div style={{width:"100%", border:"2px solid yellow", display:"flex" }}>
-				<FontAwesomeIcon icon={faFacebook} /> 
-				 <FontAwesomeIcon icon={faTwitterSquare} />  
-				</div>
-		*/}
+			
 
 				</div>
 
@@ -1691,6 +1393,7 @@ backgroundColor:"gray"
 
 
 
+</Grid>
 
 
 </>
